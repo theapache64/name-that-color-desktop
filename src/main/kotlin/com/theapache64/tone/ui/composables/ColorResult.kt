@@ -6,13 +6,15 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ColorResult(resolvedColor: com.theapache64.tone.core.model.Color?) {
+fun ColorResult(resolvedColor: com.theapache64.tone.core.ntc.model.Color?) {
     Text(
-        text = resolvedColor?.name ?: "Invalid",
-        style = MaterialTheme.typography.h3
+        text = resolvedColor?.name ?: "That's an invalid color",
+        color = if (resolvedColor != null) Color.White else Color.White.copy(alpha = 0.3f),
+        style = if (resolvedColor != null) MaterialTheme.typography.h4 else MaterialTheme.typography.body2
     )
 
     Spacer(

@@ -1,4 +1,4 @@
-package com.theapache64.tone.core.model
+package com.theapache64.tone.core.ntc.model
 
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle

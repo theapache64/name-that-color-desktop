@@ -1,12 +1,12 @@
-package com.theapache64.tone.core.manager
+package com.theapache64.tone.core.ntc.manager
 
-import com.theapache64.tone.core.exception.ColorNotFoundException
-import com.theapache64.tone.core.model.Color
+import com.theapache64.tone.core.ntc.exception.ColorNotFoundException
+import com.theapache64.tone.core.ntc.model.Color
 import com.theapache64.tone.core.ntc.model.HexColor
-import com.theapache64.tone.core.util.colorsMaterialNames
-import com.theapache64.tone.core.util.colorsNames
-import com.theapache64.tone.core.util.hsl
-import com.theapache64.tone.core.util.rgb
+import com.theapache64.tone.core.ntc.util.colorsMaterialNames
+import com.theapache64.tone.core.ntc.util.colorsNames
+import com.theapache64.tone.core.ntc.util.hsl
+import com.theapache64.tone.core.ntc.util.rgb
 import kotlin.math.pow
 
 /**
@@ -15,8 +15,10 @@ import kotlin.math.pow
  */
 object ColorNameFinder {
 
-    private var colors: List<Color> = colorsNames.map { entry -> Color(entry.key, entry.value, entry.key.rgb(), entry.key.hsl()) }
-    private var materialColors: List<Color> = colorsMaterialNames.map { entry -> Color(entry.key, entry.value, entry.key.rgb(), entry.key.hsl()) }
+    private var colors: List<Color> =
+        colorsNames.map { entry -> Color(entry.key, entry.value, entry.key.rgb(), entry.key.hsl()) }
+    private var materialColors: List<Color> =
+        colorsMaterialNames.map { entry -> Color(entry.key, entry.value, entry.key.rgb(), entry.key.hsl()) }
 
     /**
      * look for the Color of an hexadecimal color
@@ -43,8 +45,10 @@ object ColorNameFinder {
 
             if (color.value == col.hexCode) return color to col
             else {
-                val ndf1 = (r - col.rgb.r).toDouble().pow(2.0).toInt() + (g - col.rgb.g).toDouble().pow(2.0).toInt() + (b - col.rgb.b).toDouble().pow(2.0).toInt()
-                val ndf2 = (h - col.hsl.h).toDouble().pow(2.0).toInt() + (s - col.hsl.s).toDouble().pow(2.0).toInt() + (l - col.hsl.l).toDouble().pow(2.0).toInt()
+                val ndf1 = (r - col.rgb.r).toDouble().pow(2.0).toInt() + (g - col.rgb.g).toDouble().pow(2.0)
+                    .toInt() + (b - col.rgb.b).toDouble().pow(2.0).toInt()
+                val ndf2 = (h - col.hsl.h).toDouble().pow(2.0).toInt() + (s - col.hsl.s).toDouble().pow(2.0)
+                    .toInt() + (l - col.hsl.l).toDouble().pow(2.0).toInt()
                 val ndf = ndf1 + ndf2 * 2
                 if (df < 0 || df > ndf) {
                     df = ndf

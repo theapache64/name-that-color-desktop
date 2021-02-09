@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import com.theapache64.tone.core.manager.ColorNameFinder
+import com.theapache64.tone.core.ntc.manager.ColorNameFinder
 import com.theapache64.tone.core.ntc.model.HexColor
 import com.theapache64.tone.ui.composables.ColorHistory
 import com.theapache64.tone.ui.composables.ColorInput
@@ -21,7 +21,7 @@ import com.theapache64.tone.ui.composables.SourceCode
 import com.theapache64.tone.ui.theme.ColorMuskTheme
 import com.theapache64.tone.util.ClipboardUtil
 import com.theapache64.tone.util.isValidColor
-import com.theapache64.tone.core.model.Color as Kolor
+import com.theapache64.tone.core.ntc.model.Color as Kolor
 
 private val nonWordCharRegEx = "\\W+".toRegex()
 
@@ -30,7 +30,7 @@ const val APP_NAME = "Color Musk"
 
 fun main() {
 
-    var inputColorCode by mutableStateOf("f00")
+    var inputColorCode by mutableStateOf("#03000F")
     var colors by mutableStateOf(listOf<Kolor>())
 
     Window(
@@ -97,7 +97,7 @@ fun main() {
 private fun MainScreen(
     inputColorCode: String,
     colors: List<Kolor>,
-    resolvedColor: com.theapache64.tone.core.model.Color?,
+    resolvedColor: com.theapache64.tone.core.ntc.model.Color?,
     onInputColorCodeChanged: (String) -> Unit,
     onClipboardClicked: (String) -> Unit,
     onColorClicked: (Kolor) -> Unit
@@ -140,7 +140,7 @@ private fun MainScreen(
 @Composable
 private fun Content(
     colorCode: String,
-    resolvedColor: com.theapache64.tone.core.model.Color?,
+    resolvedColor: com.theapache64.tone.core.ntc.model.Color?,
     onInputColorCodeChanged: (String) -> Unit,
     onClipboardClicked: (String) -> Unit
 ) {

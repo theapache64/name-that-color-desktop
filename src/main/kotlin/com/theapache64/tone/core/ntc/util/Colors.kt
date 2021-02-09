@@ -1,6 +1,6 @@
-package com.theapache64.tone.core.util
+package com.theapache64.tone.core.ntc.util
 
-import com.theapache64.tone.core.model.Color
+import com.theapache64.tone.core.ntc.model.Color
 
 /**
  * List of colors

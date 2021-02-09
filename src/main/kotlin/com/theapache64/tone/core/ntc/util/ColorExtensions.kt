@@ -1,7 +1,7 @@
-package com.theapache64.tone.core.util
+package com.theapache64.tone.core.ntc.util
 
-import com.theapache64.tone.core.model.Hsl
-import com.theapache64.tone.core.model.Rgb
+import com.theapache64.tone.core.ntc.model.Hsl
+import com.theapache64.tone.core.ntc.model.Rgb
 import kotlin.math.roundToInt
 
 const val ALPHA_SEPARATOR = "_alpha_"

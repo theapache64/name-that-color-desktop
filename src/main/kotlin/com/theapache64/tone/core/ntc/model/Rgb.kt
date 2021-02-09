@@ -1,4 +1,4 @@
-package com.theapache64.tone.core.model
+package com.theapache64.tone.core.ntc.model
 
 data class Rgb(val r: Int, val g: Int, val b: Int) {
 

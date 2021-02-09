@@ -1,9 +1,9 @@
 package com.theapache64.tone.core.ntc.model
 
-import com.theapache64.tone.core.util.hsl
-import com.theapache64.tone.core.util.rgb
-import com.theapache64.tone.core.util.roundTo2Decimal
-import com.theapache64.tone.core.util.roundTo2HexString
+import com.theapache64.tone.core.ntc.util.hsl
+import com.theapache64.tone.core.ntc.util.rgb
+import com.theapache64.tone.core.ntc.util.roundTo2Decimal
+import com.theapache64.tone.core.ntc.util.roundTo2HexString
 
 class HexColor(val input: String) {
 

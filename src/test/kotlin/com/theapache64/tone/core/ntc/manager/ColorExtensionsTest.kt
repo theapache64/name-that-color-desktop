@@ -1,9 +1,9 @@
-package com.theapache64.tone.core.manager
+package com.theapache64.tone.core.ntc.manager
 
-import com.theapache64.tone.core.model.Hsl
-import com.theapache64.tone.core.model.Rgb
-import com.theapache64.tone.core.util.hsl
-import com.theapache64.tone.core.util.rgb
+import com.theapache64.tone.core.ntc.model.Hsl
+import com.theapache64.tone.core.ntc.model.Rgb
+import com.theapache64.tone.core.ntc.util.hsl
+import com.theapache64.tone.core.ntc.util.rgb
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.theapache64.tone.core.manager
+package com.theapache64.tone.core.ntc.manager
 
 import com.theapache64.tone.core.ntc.model.HexColor
 import org.junit.Assert.assertEquals

@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.theapache64.tone.ui.theme.SourceCodePro
 
 @Composable
-fun SourceCode(resolvedColor: com.theapache64.tone.core.model.Color, onClipboardClicked: (String) -> Unit) {
+fun SourceCode(resolvedColor: com.theapache64.tone.core.ntc.model.Color, onClipboardClicked: (String) -> Unit) {
     Spacer(
         modifier = Modifier.height(10.dp)
     )

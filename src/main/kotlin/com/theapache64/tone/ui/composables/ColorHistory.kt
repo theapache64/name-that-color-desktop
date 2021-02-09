@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerMoveFilter
 import androidx.compose.ui.unit.dp
-import com.theapache64.tone.core.model.Color as Kolor
+import com.theapache64.tone.core.ntc.model.Color as Kolor
 
 /*fun main() {
     Window {

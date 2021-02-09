@@ -1,7 +1,7 @@
-package com.theapache64.tone.core.model
+package com.theapache64.tone.core.ntc.model
 
 import com.theapache64.tone.core.ntc.model.HexColor
-import com.theapache64.tone.core.util.toXmlName
+import com.theapache64.tone.core.ntc.util.toXmlName
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
