@@ -30,7 +30,7 @@ const val APP_NAME = "Name That Color"
 
 fun main() {
 
-    var inputColorCode by mutableStateOf(getRandomColor())
+    var inputColorCode by mutableStateOf(ClipboardUtil.parseColorFromClipboard() ?: getRandomColor())
     var colors by mutableStateOf(listOf<Chroma>())
 
     Window(
