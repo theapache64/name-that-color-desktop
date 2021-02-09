@@ -23,14 +23,19 @@ _A compose desktop demo project_
 - Random color generator
 - Color history
 
+## 🗣️ Shout-outs 
+
+- Inspired from [chir.ag/name-that-color](https://chir.ag/projects/name-that-color/)
+- Huge shout out to [@galex](https://twitter.com/galex) for his Kotlin translation of NTC
+
+Feel free to ping me 😉
+
 ## ✍️ Author
 
 👤 **theapache64**
 
 * Twitter: <a href="https://twitter.com/theapache64" target="_blank">@theapache64</a>
 * Email: theapache64@gmail.com
-
-Feel free to ping me 😉
 
 ## 🤝 Contributing
 
