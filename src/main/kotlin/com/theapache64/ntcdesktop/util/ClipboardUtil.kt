@@ -5,6 +5,7 @@ import java.awt.datatransfer.DataFlavor
 import java.awt.datatransfer.StringSelection
 
 object ClipboardUtil {
+
     private val clipboardManager by lazy {
         Toolkit.getDefaultToolkit().systemClipboard
     }
@@ -12,7 +13,6 @@ object ClipboardUtil {
     fun parseColorFromClipboard(): String? {
         val clipboardValue = clipboardManager.getData(DataFlavor.stringFlavor)?.toString()
         if (clipboardValue != null) {
-            // Supports #AAA #AABBCC formats only
             if (clipboardValue.isValidColor()) {
                 return clipboardValue
             }

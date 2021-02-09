@@ -26,7 +26,7 @@ import java.util.*
 
 private val nonWordCharRegEx = "\\W+".toRegex()
 private val random by lazy { Random() }
-const val APP_NAME = "Color Musk"
+const val APP_NAME = "Name That Color"
 
 fun main() {
 

@@ -9,18 +9,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import com.theapache64.ntcdesktop.ui.composables.ToolBar
 
-// Colors
-
-
 // Color set
-val LightTheme = lightColors()
+val LightTheme = lightColors() // TODO : Implement light theme
+
 val DarkTheme = darkColors(
     primary = R.color.TelegramBlue,
     onPrimary = Color.White,
-
     secondary = R.color.BrightGray,
     onSecondary = Color.White,
-
     surface = R.color.WoodSmoke,
 )
 
