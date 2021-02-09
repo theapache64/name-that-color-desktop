@@ -10,10 +10,18 @@
 
 > Save your brain from the color naming headache
 
+_A compose desktop demo project_
+
 ### ✨ Demo
 
 ![](demo.gif)
 
+## 🌟 Features
+
+- Auto clipboard capture (If there's a color in your clipboard)
+- Kotlin Compose `Color` code generator
+- Random color generator
+- Color history
 
 ## ✍️ Author
 
