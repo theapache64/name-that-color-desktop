@@ -1,4 +1,4 @@
-package com.theapache64.tone.composables
+package com.theapache64.tone.ui.composables
 
 import androidx.compose.desktop.AppManager
 import androidx.compose.foundation.background

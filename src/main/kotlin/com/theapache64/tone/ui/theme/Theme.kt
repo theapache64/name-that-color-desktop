@@ -1,4 +1,4 @@
-package com.theapache64.tone.theme
+package com.theapache64.tone.ui.theme
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material.MaterialTheme
@@ -7,7 +7,7 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import com.theapache64.tone.composables.ToolBar
+import com.theapache64.tone.ui.composables.ToolBar
 
 // Colors
 
@@ -25,7 +25,7 @@ val DarkTheme = darkColors(
 )
 
 @Composable
-fun ColorMusk(
+fun ColorMuskTheme(
     title: String = "",
     displayToolbar: Boolean = true,
     isDark: Boolean = true,

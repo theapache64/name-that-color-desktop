@@ -1,4 +1,4 @@
-package com.theapache64.tone.composables
+package com.theapache64.tone.ui.composables
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer

@@ -2,7 +2,7 @@ package com.theapache64.tone.core.model
 
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
-import com.theapache64.tone.theme.R
+import com.theapache64.tone.ui.theme.R
 
 data class Color(val hexCode: String, val name: String, val rgb: Rgb, val hsl: Hsl) {
 

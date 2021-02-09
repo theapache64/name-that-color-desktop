@@ -1,4 +1,4 @@
-package com.theapache64.tone.composables
+package com.theapache64.tone.ui.composables
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
@@ -16,7 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.theapache64.tone.theme.SourceCodePro
+import com.theapache64.tone.ui.theme.SourceCodePro
 
 @Composable
 fun SourceCode(resolvedColor: com.theapache64.tone.core.model.Color, onClipboardClicked: (String) -> Unit) {
@@ -33,7 +33,7 @@ fun SourceCode(resolvedColor: com.theapache64.tone.core.model.Color, onClipboard
             text = kotlinCode,
             modifier = Modifier
                 .background(
-                    color = Color.Black.copy(alpha = 0.2f),
+                    color = Color.Black.copy(alpha = 0.5f),
                     shape = RoundedCornerShape(5.dp)
                 )
                 .padding(5.dp),

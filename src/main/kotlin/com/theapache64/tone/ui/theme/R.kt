@@ -1,4 +1,4 @@
-package com.theapache64.tone.theme
+package com.theapache64.tone.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
