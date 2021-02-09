@@ -1,6 +1,7 @@
 package com.theapache64.ntcdesktop.util
 
-import com.theapache64.ntcdesktop.core.ntc.model.HexColor
+import com.github.theapache64.namethatcolor.model.HexColor
+
 
 fun String.isValidColor(): Boolean {
     return try {

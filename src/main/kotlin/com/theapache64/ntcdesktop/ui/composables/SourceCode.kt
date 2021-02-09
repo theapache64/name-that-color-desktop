@@ -16,9 +16,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.theapache64.ntcdesktop.core.ntc.model.Chroma
-import com.theapache64.ntcdesktop.core.ntc.util.getComposeDeclarationCode
+import com.github.theapache64.namethatcolor.model.Chroma
 import com.theapache64.ntcdesktop.ui.theme.SourceCodePro
+import com.theapache64.ntcdesktop.util.getComposeDeclarationCode
 
 @Composable
 fun SourceCode(resolvedChroma: Chroma, onClipboardClicked: (String) -> Unit) {

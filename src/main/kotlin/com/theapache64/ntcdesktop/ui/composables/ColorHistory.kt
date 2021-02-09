@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerMoveFilter
 import androidx.compose.ui.unit.dp
-import com.theapache64.ntcdesktop.core.ntc.model.Chroma as Kolor
+import com.github.theapache64.namethatcolor.model.Chroma
 
 /*fun main() {
     Window {
@@ -33,8 +33,8 @@ import com.theapache64.ntcdesktop.core.ntc.model.Chroma as Kolor
 @Composable
 fun ColorHistory(
     modifier: Modifier = Modifier,
-    colors: List<Kolor>,
-    onColorClicked: (Kolor) -> Unit
+    colors: List<Chroma>,
+    onColorClicked: (Chroma) -> Unit
 ) {
     LazyColumn(
         modifier = modifier
@@ -52,8 +52,8 @@ private const val DEFAULT_COLOR_ITEM_BG_ALPHA = 0.2f
 
 @Composable
 fun ColorItem(
-    color: Kolor,
-    onColorClicked: (Kolor) -> Unit
+    color: Chroma,
+    onColorClicked: (Chroma) -> Unit
 ) {
     var backgroundAlpha by remember { mutableStateOf(DEFAULT_COLOR_ITEM_BG_ALPHA) }
 

@@ -12,9 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import com.theapache64.ntcdesktop.core.ntc.manager.ColorNameFinder
-import com.theapache64.ntcdesktop.core.ntc.model.Chroma
-import com.theapache64.ntcdesktop.core.ntc.model.HexColor
+import com.github.theapache64.namethatcolor.manager.ColorNameFinder
+import com.github.theapache64.namethatcolor.model.Chroma
+import com.github.theapache64.namethatcolor.model.HexColor
 import com.theapache64.ntcdesktop.ui.composables.ColorHistory
 import com.theapache64.ntcdesktop.ui.composables.ColorInput
 import com.theapache64.ntcdesktop.ui.composables.ColorResult

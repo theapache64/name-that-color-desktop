@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.theapache64.ntcdesktop.core.ntc.model.Chroma
+import com.github.theapache64.namethatcolor.model.Chroma
 
 @Composable
 fun ColorResult(resolvedChroma: Chroma?) {

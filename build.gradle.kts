@@ -14,6 +14,7 @@ repositories {
     jcenter()
     mavenCentral()
     maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
+    maven { url = uri("https://jitpack.io") }
 }
 
 dependencies {
@@ -21,6 +22,7 @@ dependencies {
     implementation(compose.desktop.currentOs)
     implementation(compose.materialIconsExtended)
     implementation(kotlin("stdlib-jdk8"))
+    implementation("com.github.theapache64:name-that-color:1.0.0-alpha02")
 }
 
 tasks.test {

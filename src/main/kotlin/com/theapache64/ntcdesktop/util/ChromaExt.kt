@@ -1,8 +1,8 @@
-package com.theapache64.ntcdesktop.core.ntc.util
+package com.theapache64.ntcdesktop.util
 
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
-import com.theapache64.ntcdesktop.core.ntc.model.Chroma
+import com.github.theapache64.namethatcolor.model.Chroma
 import com.theapache64.ntcdesktop.ui.theme.R
 
 fun Chroma.getComposeDeclarationCode(): AnnotatedString {
