@@ -24,10 +24,12 @@ import com.theapache64.ntcdesktop.util.ClipboardUtil
 import com.theapache64.ntcdesktop.util.isValidColor
 import java.util.*
 
-private val nonWordCharRegEx = "\\W+".toRegex()
+val nonWordCharRegEx = "\\W+".toRegex()
 private val random by lazy { Random() }
 const val APP_NAME = "Name That Color"
+
 class Main
+
 fun main() {
 
     var inputColorCode by mutableStateOf(ClipboardUtil.parseColorFromClipboard() ?: getRandomColor())
@@ -41,10 +43,7 @@ fun main() {
             onFocusGet = {
                 val clipboardColor = ClipboardUtil.parseColorFromClipboard()
                 if (clipboardColor != null) {
-                    val resolvedColor = ColorNameFinder.findColor(HexColor(clipboardColor))
-                    if (colors.contains(resolvedColor.second).not()) {
-                        inputColorCode = clipboardColor.replace(nonWordCharRegEx, "")
-                    }
+                    inputColorCode = clipboardColor
                 }
             }
         )

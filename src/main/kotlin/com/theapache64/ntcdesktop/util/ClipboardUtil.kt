@@ -1,5 +1,6 @@
 package com.theapache64.ntcdesktop.util
 
+import com.theapache64.ntcdesktop.nonWordCharRegEx
 import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import java.awt.datatransfer.StringSelection
@@ -16,7 +17,7 @@ object ClipboardUtil {
             val clipboardValue = clipboardManager.getData(DataFlavor.stringFlavor)?.toString()
             if (clipboardValue != null) {
                 if (clipboardValue.isValidColor()) {
-                    return clipboardValue
+                    return clipboardValue.replace(nonWordCharRegEx, "")
                 }
             }
 

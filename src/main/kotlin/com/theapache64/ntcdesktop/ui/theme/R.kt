@@ -12,5 +12,8 @@ object R {
         val RoyalBlue = Color(0xff4169e1)
         val CadetBlue = Color(0xffa9b2c3)
         val BrandyPunch = Color(0xffcd8429)
+
+        val Valencia = Color(0xffd84437)
+        val Malachite = Color(0xff0bda51)
     }
 }
