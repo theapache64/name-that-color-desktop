@@ -16,6 +16,8 @@ _A compose desktop demo project_
 
 ![](demo.gif)
 
+_Watch the [full video demo](full_demo.mp4)_
+
 ## 🌟 Features
 
 - Auto clipboard capture (If there's a color in your clipboard)
