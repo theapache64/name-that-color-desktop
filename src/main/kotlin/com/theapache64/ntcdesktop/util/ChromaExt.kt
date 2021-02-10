@@ -5,7 +5,7 @@ import androidx.compose.ui.text.SpanStyle
 import com.github.theapache64.namethatcolor.model.Chroma
 import com.theapache64.ntcdesktop.ui.theme.R
 
-fun Chroma.getComposeDeclarationCode(): AnnotatedString {
+fun Chroma.getComposeDeclarationCode(inputColorCode : String): AnnotatedString {
 
     return with(AnnotatedString.Builder()) {
         pushStyle(SpanStyle(color = R.color.CadetBlue))
@@ -21,7 +21,7 @@ fun Chroma.getComposeDeclarationCode(): AnnotatedString {
         pop()
 
         pushStyle(SpanStyle(color = R.color.RoyalBlue))
-        append("0xff${hexCode.toLowerCase()}")
+        append("0xff${inputColorCode.toLowerCase()}")
         pop()
 
         pushStyle(SpanStyle(color = R.color.CadetBlue))

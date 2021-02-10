@@ -21,7 +21,7 @@ import com.theapache64.ntcdesktop.ui.theme.SourceCodePro
 import com.theapache64.ntcdesktop.util.getComposeDeclarationCode
 
 @Composable
-fun SourceCode(resolvedChroma: Chroma, onClipboardClicked: (String) -> Unit) {
+fun SourceCode(resolvedChroma: Chroma, inputColorCode:String, onClipboardClicked: (String) -> Unit) {
     Spacer(
         modifier = Modifier.height(10.dp)
     )
@@ -30,7 +30,7 @@ fun SourceCode(resolvedChroma: Chroma, onClipboardClicked: (String) -> Unit) {
     ) {
 
         /*Code*/
-        val kotlinCode = resolvedChroma.getComposeDeclarationCode()
+        val kotlinCode = resolvedChroma.getComposeDeclarationCode(inputColorCode)
         Text(
             text = kotlinCode,
             modifier = Modifier

@@ -118,7 +118,7 @@ private fun MainScreen(
     ) {
 
         Content(
-            colorCode = inputColorCode,
+            inputColorCode = inputColorCode,
             resolvedChroma = resolvedChroma,
             onInputColorCodeChanged = onInputColorCodeChanged,
             onClipboardClicked = onClipboardClicked,
@@ -143,7 +143,7 @@ private fun MainScreen(
 
 @Composable
 private fun Content(
-    colorCode: String,
+    inputColorCode: String,
     resolvedChroma: Chroma?,
     onInputColorCodeChanged: (String) -> Unit,
     onClipboardClicked: (String) -> Unit,
@@ -161,14 +161,14 @@ private fun Content(
 
         /*Color input*/
         ColorInput(
-            colorCode = colorCode,
+            colorCode = inputColorCode,
             onInputColorCodeChanged = onInputColorCodeChanged,
             onRandomColorClicked = onRandomColorClicked
         )
 
         /*Code*/
         if (resolvedChroma != null) {
-            SourceCode(resolvedChroma, onClipboardClicked)
+            SourceCode(resolvedChroma, inputColorCode, onClipboardClicked)
         }
     }
 }
