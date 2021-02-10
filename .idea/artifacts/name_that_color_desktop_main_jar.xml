@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="name-that-color-desktop.main:jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="name-that-color-desktop.main.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="name-that-color-desktop.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.material/material-desktop/0.3.0-build150/9c2b2356e5efab1142f710c518d71bfb211fac8c/material-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.4.1/936067d1e0195f638396f60e71da745bb14a35ca/kotlinx-coroutines-core-jvm-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.skiko/skiko-jvm-runtime-linux-x64/0.2.6/4beb924211adff909bb4b6b86f533f299b25b7da/skiko-jvm-runtime-linux-x64-0.2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.ui/ui-util-desktop/0.3.0-build150/315a0dbf2cae9414e81cb5f8064e7eade6b1936a/ui-util-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.4.30/aeecfab2e6acbcb80fc6628e8882c98cbbd819cf/kotlin-stdlib-jdk8-1.4.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.theapache64/name-that-color/1.0.0-alpha02/5b9ce686fd2ef6824c46b9af374d78590c480d51/name-that-color-1.0.0-alpha02.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.foundation/foundation-desktop/0.3.0-build150/d2ccc634d6a0b78290b8fbb9526dd7d7bac79cfb/foundation-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.animation/animation-desktop/0.3.0-build150/2a289a39951798194ab1b0fe2d426362d67a9e1b/animation-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.runtime/runtime-desktop/0.3.0-build150/299654496e6e1f8300dbc1301c6cf567709cd69e/runtime-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.ui/ui-unit-desktop/0.3.0-build150/b99cc138a66ecb249d4902d0b8e3a3125180fc75/ui-unit-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.material/material-icons-core-desktop/0.3.0-build150/2155afd22a84631377e23e30fad1c84a5a7f9173/material-icons-core-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.ui/ui-geometry-desktop/0.3.0-build150/bf8cd9c4eb4c17661dd2d32a6a5b400fbfe89e7b/ui-geometry-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.4.30/cd81ed90fd79e43f587bd384c2bc6d1aed0bfe31/kotlin-stdlib-jdk7-1.4.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.desktop/desktop-jvm/0.3.0-build150/aaa0de8f02f192b96480fdb29d3145483a55f558/desktop-jvm-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.material/material-ripple-desktop/0.3.0-build150/d163bb5f07c2a83f595c91a02bbd458b279a85e4/material-ripple-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.material/material-icons-extended-desktop/0.3.0-build150/6ca63eca7993b19c50cd62b5ecd7c6c9798f1b49/material-icons-extended-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.ui/ui-desktop/0.3.0-build150/7526b28fdc292bec2288d1b5aa9904d1ca5c8184/ui-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.animation/animation-core-desktop/0.3.0-build150/d1dad8a696ec135e3f38f522b43946731d572b0c/animation-core-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.ui/ui-graphics-desktop/0.3.0-build150/a3cf3b91f419d61667c8e2095beb611aaa5f62d6/ui-graphics-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-swing/1.4.1/60c1303504d7e745820865d4f29be7ea23303318/kotlinx-coroutines-swing-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.4.30/bb9a3173350f55732416ee27956ea8f9b81f4dbb/kotlin-stdlib-common-1.4.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.4.30/d10d1e10f47006ee08162dde039e38ac487de4ac/kotlin-stdlib-1.4.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.foundation/foundation-layout-desktop/0.3.0-build150/b7594acb8e4c24dfd1700609e3b5dfbf328e3a89/foundation-layout-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-collections-immutable-jvm/0.3/dd36423a37666db520efe646bb0aa0ddea3b5b96/kotlinx-collections-immutable-jvm-0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.ui/ui-text-desktop/0.3.0-build150/f11d4babb7776be1f9c4660339cc41cc9dd92b39/ui-text-desktop-0.3.0-build150.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.skiko/skiko-jvm/0.2.6/9d99d369fceec4654ae7b26440334d87042a09c2/skiko-jvm-0.2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.compose.runtime/runtime-saveable-desktop/0.3.0-build150/1172847455979253fe358652329ece38bd64775/runtime-saveable-desktop-0.3.0-build150.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

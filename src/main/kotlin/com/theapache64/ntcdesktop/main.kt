@@ -27,7 +27,7 @@ import java.util.*
 private val nonWordCharRegEx = "\\W+".toRegex()
 private val random by lazy { Random() }
 const val APP_NAME = "Name That Color"
-
+class Main
 fun main() {
 
     var inputColorCode by mutableStateOf(ClipboardUtil.parseColorFromClipboard() ?: getRandomColor())

@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.4.30"
-    id("org.jetbrains.compose") version "0.3.0-build150"
+    id("org.jetbrains.compose") version "0.3.0-build152"
 }
 
 group = "com.theapache64"
@@ -36,10 +36,10 @@ tasks.withType<KotlinCompile>() {
 
 compose.desktop {
     application {
-        mainClass = "MainKt"
+        mainClass = "com.theapache64.ntcdesktop.MainKt"
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "Tony"
+            packageName = "Name That Color Desktop"
         }
     }
 }

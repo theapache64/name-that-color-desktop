@@ -96,7 +96,7 @@ private fun ToolBarIcon(
         onClick = onClick
     ) {
         Icon(
-            modifier = Modifier.padding(7.dp),
+            modifier = Modifier.padding(3.dp),
             imageVector = icon,
             contentDescription = ""
         )
