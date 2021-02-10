@@ -81,7 +81,7 @@ fun ColorItem(
         Text(text = color.name, modifier = Modifier.fillMaxSize(), style = MaterialTheme.typography.body2)
         Box(
             modifier = Modifier
-                .size(12.dp)
+                .requiredSize(12.dp)
                 .align(Alignment.CenterVertically)
                 .background(
                     Color(
