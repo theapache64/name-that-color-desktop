@@ -16,20 +16,6 @@ import androidx.compose.ui.input.pointer.pointerMoveFilter
 import androidx.compose.ui.unit.dp
 import com.github.theapache64.namethatcolor.model.Chroma
 
-/*fun main() {
-    Window {
-        ColorMuskTheme {
-            ColorStorage(
-                setOf(
-                    Color("#ff0000", "Red", Rgb(255, 0, 0), Hsl(0, 0, 0)),
-                    Color("#00ff00", "Green", Rgb(0, 255, 0), Hsl(0, 0, 0)),
-                    Color("#00ff00", "Blue", Rgb(0, 0, 255), Hsl(0, 0, 0)),
-                )
-            )
-        }
-    }
-}*/
-
 @Composable
 fun ColorHistory(
     modifier: Modifier = Modifier,

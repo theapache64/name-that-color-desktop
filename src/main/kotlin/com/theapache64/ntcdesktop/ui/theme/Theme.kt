@@ -20,7 +20,7 @@ val DarkTheme = darkColors(
 )
 
 @Composable
-fun ColorMuskTheme(
+fun NameThatColorTheme(
     isDark: Boolean = true,
     content: @Composable () -> Unit,
 ) {

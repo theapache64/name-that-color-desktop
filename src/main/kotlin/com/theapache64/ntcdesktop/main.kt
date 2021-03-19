@@ -22,7 +22,7 @@ import com.theapache64.ntcdesktop.ui.composables.ColorHistory
 import com.theapache64.ntcdesktop.ui.composables.ColorInput
 import com.theapache64.ntcdesktop.ui.composables.ColorResult
 import com.theapache64.ntcdesktop.ui.composables.SourceCode
-import com.theapache64.ntcdesktop.ui.theme.ColorMuskTheme
+import com.theapache64.ntcdesktop.ui.theme.NameThatColorTheme
 import com.theapache64.ntcdesktop.util.ClipboardUtil
 import com.theapache64.ntcdesktop.util.isValidColor
 import kotlinx.coroutines.Job
@@ -72,7 +72,7 @@ fun main() {
             }
         }
 
-        ColorMuskTheme {
+        NameThatColorTheme {
             MainScreen(
                 inputColorCode = inputColorCode,
                 colors = colors,
