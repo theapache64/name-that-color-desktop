@@ -33,11 +33,10 @@ fun ColorInput(
 
         TextField(
             modifier = Modifier.height(50.dp),
-            activeColor = MaterialTheme.colors.onSurface,
             value = colorCode,
-            onValueChange = {
+            onValueChange = { it ->
                 onInputColorCodeChanged(it)
-            }
+            },
         )
 
         IconButton(

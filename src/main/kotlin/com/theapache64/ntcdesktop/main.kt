@@ -3,9 +3,12 @@ package com.theapache64.ntcdesktop
 import androidx.compose.desktop.Window
 import androidx.compose.desktop.WindowEvents
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Snackbar
+import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -22,7 +25,11 @@ import com.theapache64.ntcdesktop.ui.composables.SourceCode
 import com.theapache64.ntcdesktop.ui.theme.ColorMuskTheme
 import com.theapache64.ntcdesktop.util.ClipboardUtil
 import com.theapache64.ntcdesktop.util.isValidColor
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import java.util.*
+
 
 val nonWordCharRegEx = "\\W+".toRegex()
 private val random by lazy { Random() }
@@ -75,7 +82,6 @@ fun main() {
                         nonWordCharRegEx,
                         ""
                     )
-
                 },
                 onClipboardClicked = { kotlinCode ->
                     ClipboardUtil.addToClipboard(kotlinCode)
@@ -88,7 +94,7 @@ fun main() {
                 },
                 onRandomColorClicked = {
                     inputColorCode = getRandomColor()
-                }
+                },
             )
         }
 
@@ -103,8 +109,12 @@ private fun MainScreen(
     onInputColorCodeChanged: (String) -> Unit,
     onClipboardClicked: (String) -> Unit,
     onColorClicked: (Chroma) -> Unit,
-    onRandomColorClicked: () -> Unit
+    onRandomColorClicked: () -> Unit,
 ) {
+
+    var showCopiedToClipboardSnackbar by remember { mutableStateOf(false) }
+    val scope = rememberCoroutineScope()
+    var snackBarJob: Job? = null
 
     Box(
         modifier = Modifier
@@ -121,8 +131,18 @@ private fun MainScreen(
             inputColorCode = inputColorCode,
             resolvedChroma = resolvedChroma,
             onInputColorCodeChanged = onInputColorCodeChanged,
-            onClipboardClicked = onClipboardClicked,
-            onRandomColorClicked = onRandomColorClicked
+            onClipboardClicked = {
+                showCopiedToClipboardSnackbar = false
+                onClipboardClicked(it)
+                scope.launch {
+                    delay(1) // just to make little blink
+                    showCopiedToClipboardSnackbar = true
+                }
+            },
+            onRandomColorClicked = {
+                showCopiedToClipboardSnackbar = false // hide if showing
+                onRandomColorClicked.invoke()
+            }
         )
 
         if (colors.isNotEmpty()) {
@@ -138,6 +158,26 @@ private fun MainScreen(
                 }
             )
         }
+
+
+        // Bottom SnackBar
+        if (showCopiedToClipboardSnackbar) {
+            Snackbar(
+                modifier = Modifier
+                    .padding(10.dp)
+                    .clickable {
+                        showCopiedToClipboardSnackbar = false // dismiss when clicked
+                    }
+                    .align(Alignment.BottomCenter),
+            ) {
+                Text(text = "Copied to clipboard")
+            }
+
+            LaunchedEffect(Unit) {
+                delay(2_000) // snack bar duration
+                showCopiedToClipboardSnackbar = false
+            }
+        }
     }
 }
 
@@ -147,7 +187,7 @@ private fun Content(
     resolvedChroma: Chroma?,
     onInputColorCodeChanged: (String) -> Unit,
     onClipboardClicked: (String) -> Unit,
-    onRandomColorClicked: () -> Unit
+    onRandomColorClicked: () -> Unit,
 ) {
 
     Column(

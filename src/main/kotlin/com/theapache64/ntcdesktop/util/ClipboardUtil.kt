@@ -22,7 +22,7 @@ object ClipboardUtil {
             }
 
         } catch (e: UnsupportedFlavorException) {
-            e.printStackTrace()
+            println("W: ${e.message}")
         }
         return null
     }
