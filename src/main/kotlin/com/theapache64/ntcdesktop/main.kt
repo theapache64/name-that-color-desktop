@@ -37,6 +37,9 @@ const val APP_NAME = "Name That Color"
 
 class Main
 
+
+
+
 fun main() {
 
     var inputColorCode by mutableStateOf(ClipboardUtil.parseColorFromClipboard() ?: getRandomColor())
@@ -44,7 +47,6 @@ fun main() {
 
     Window(
         title = APP_NAME,
-        undecorated = true,
         size = IntSize(1024, 600),
         events = WindowEvents(
             onFocusGet = {
@@ -70,9 +72,7 @@ fun main() {
             }
         }
 
-        ColorMuskTheme(
-            title = APP_NAME
-        ) {
+        ColorMuskTheme {
             MainScreen(
                 inputColorCode = inputColorCode,
                 colors = colors,
@@ -158,7 +158,6 @@ private fun MainScreen(
                 }
             )
         }
-
 
         // Bottom SnackBar
         if (showCopiedToClipboardSnackbar) {

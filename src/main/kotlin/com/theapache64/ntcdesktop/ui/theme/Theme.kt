@@ -7,7 +7,6 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import com.theapache64.ntcdesktop.ui.composables.ToolBar
 
 // Color set
 val LightTheme = lightColors() // TODO : Implement light theme
@@ -22,10 +21,8 @@ val DarkTheme = darkColors(
 
 @Composable
 fun ColorMuskTheme(
-    title: String = "",
-    displayToolbar: Boolean = true,
     isDark: Boolean = true,
-    content: @Composable () -> Unit
+    content: @Composable () -> Unit,
 ) {
     MaterialTheme(
         colors = if (isDark) DarkTheme else LightTheme,
@@ -33,16 +30,7 @@ fun ColorMuskTheme(
     ) {
         Surface {
             Column {
-                if (displayToolbar) {
-                    Column {
-                        ToolBar(
-                            title = title
-                        )
-                        content()
-                    }
-                } else {
-                    content()
-                }
+                content()
             }
         }
     }

@@ -2,7 +2,6 @@ package com.theapache64.ntcdesktop.ui.composables
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -17,7 +16,7 @@ import androidx.compose.ui.unit.dp
 fun ColorInput(
     colorCode: String,
     onInputColorCodeChanged: (String) -> Unit,
-    onRandomColorClicked: () -> Unit
+    onRandomColorClicked: () -> Unit,
 ) {
     Row(
         verticalAlignment = Alignment.CenterVertically
@@ -32,8 +31,9 @@ fun ColorInput(
         )
 
         TextField(
-            modifier = Modifier.height(50.dp),
             value = colorCode,
+            singleLine = true,
+            maxLines = 1,
             onValueChange = { it ->
                 onInputColorCodeChanged(it)
             },

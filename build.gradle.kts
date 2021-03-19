@@ -40,6 +40,21 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "Name That Color Desktop"
+
+            val iconsRoot = project.file("src/main/resources/drawables")
+
+            linux {
+                iconFile.set(iconsRoot.resolve("launcher_icons/linux.png"))
+            }
+
+            windows {
+                iconFile.set(iconsRoot.resolve("launcher_icons/windows.ico"))
+            }
+
+            macOS {
+                iconFile.set(iconsRoot.resolve("launcher_icons/macos.icns"))
+            }
+
         }
     }
 }
