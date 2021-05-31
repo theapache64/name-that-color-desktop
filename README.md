@@ -65,10 +65,6 @@ Give a ⭐️ if this project helped you!
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="160">
 </a>
 
-<a href="https://www.paypal.me/theapache64" target="_blank">
-    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donation" width="160">
-</a>
-
 ## ☑️ TODO
 
 - [ ] Release `v1.0.0-alpha01`
